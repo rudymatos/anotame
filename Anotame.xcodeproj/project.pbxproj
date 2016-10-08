@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F54E335B1DA988A7008D301B /* Board+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54E33591DA988A7008D301B /* Board+CoreDataClass.swift */; };
+		F54E335C1DA988A7008D301B /* Board+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54E335A1DA988A7008D301B /* Board+CoreDataProperties.swift */; };
 		F5E72EC31DA46F3B003A4AF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E72EC21DA46F3B003A4AF9 /* AppDelegate.swift */; };
 		F5E72EC51DA46F3B003A4AF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E72EC41DA46F3B003A4AF9 /* ViewController.swift */; };
 		F5E72EC81DA46F3B003A4AF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5E72EC61DA46F3B003A4AF9 /* Main.storyboard */; };
@@ -27,11 +29,11 @@
 		F5E72EF41DA47616003A4AF9 /* Events+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E72EE61DA47616003A4AF9 /* Events+CoreDataProperties.swift */; };
 		F5E72EF71DA476C0003A4AF9 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E72EF61DA476C0003A4AF9 /* CoreDataHelper.swift */; };
 		F5EE7A071DA4857D00B0A6C0 /* AnotameError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE7A061DA4857D00B0A6C0 /* AnotameError.swift */; };
-		F5EE7A0C1DA4CBCE00B0A6C0 /* Board+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE7A0A1DA4CBCE00B0A6C0 /* Board+CoreDataClass.swift */; };
-		F5EE7A0D1DA4CBCE00B0A6C0 /* Board+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE7A0B1DA4CBCE00B0A6C0 /* Board+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F54E33591DA988A7008D301B /* Board+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Board+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F54E335A1DA988A7008D301B /* Board+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Board+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F5E72EBF1DA46F3B003A4AF9 /* Anotame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anotame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5E72EC21DA46F3B003A4AF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5E72EC41DA46F3B003A4AF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,8 +57,6 @@
 		F5E72EE61DA47616003A4AF9 /* Events+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Events+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F5E72EF61DA476C0003A4AF9 /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		F5EE7A061DA4857D00B0A6C0 /* AnotameError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnotameError.swift; sourceTree = "<group>"; };
-		F5EE7A0A1DA4CBCE00B0A6C0 /* Board+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Board+CoreDataClass.swift"; path = "../Board+CoreDataClass.swift"; sourceTree = "<group>"; };
-		F5EE7A0B1DA4CBCE00B0A6C0 /* Board+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Board+CoreDataProperties.swift"; path = "../Board+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +106,8 @@
 		F5E72ED81DA475AE003A4AF9 /* entities */ = {
 			isa = PBXGroup;
 			children = (
-				F5EE7A0A1DA4CBCE00B0A6C0 /* Board+CoreDataClass.swift */,
-				F5EE7A0B1DA4CBCE00B0A6C0 /* Board+CoreDataProperties.swift */,
+				F54E33591DA988A7008D301B /* Board+CoreDataClass.swift */,
+				F54E335A1DA988A7008D301B /* Board+CoreDataProperties.swift */,
 				F5E72EDB1DA47616003A4AF9 /* PlayerType+CoreDataClass.swift */,
 				F5E72EDC1DA47616003A4AF9 /* PlayerType+CoreDataProperties.swift */,
 				F5E72EDD1DA47616003A4AF9 /* League+CoreDataClass.swift */,
@@ -213,17 +213,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5EE7A0C1DA4CBCE00B0A6C0 /* Board+CoreDataClass.swift in Sources */,
+				F54E335B1DA988A7008D301B /* Board+CoreDataClass.swift in Sources */,
 				F5E72EF21DA47616003A4AF9 /* PlayerPosition+CoreDataProperties.swift in Sources */,
 				F5E72EC51DA46F3B003A4AF9 /* ViewController.swift in Sources */,
 				F5E72ECB1DA46F3B003A4AF9 /* Anotame.xcdatamodeld in Sources */,
-				F5EE7A0D1DA4CBCE00B0A6C0 /* Board+CoreDataProperties.swift in Sources */,
 				F5E72EF11DA47616003A4AF9 /* PlayerPosition+CoreDataClass.swift in Sources */,
 				F5E72EEA1DA47616003A4AF9 /* PlayerType+CoreDataProperties.swift in Sources */,
 				F5E72EF71DA476C0003A4AF9 /* CoreDataHelper.swift in Sources */,
 				F5E72EF01DA47616003A4AF9 /* Team+CoreDataProperties.swift in Sources */,
 				F5E72EEB1DA47616003A4AF9 /* League+CoreDataClass.swift in Sources */,
 				F5E72EEE1DA47616003A4AF9 /* Player+CoreDataProperties.swift in Sources */,
+				F54E335C1DA988A7008D301B /* Board+CoreDataProperties.swift in Sources */,
 				F5E72EEF1DA47616003A4AF9 /* Team+CoreDataClass.swift in Sources */,
 				F5EE7A071DA4857D00B0A6C0 /* AnotameError.swift in Sources */,
 				F5E72EF41DA47616003A4AF9 /* Events+CoreDataProperties.swift in Sources */,
