@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="16A323" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Board" representedClassName=".Board" syncable="YES">
+        <attribute name="active" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="creation_date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <relationship name="arriving_order_list" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Player" inverseName="arriving_order_list" inverseEntity="Player" syncable="YES"/>
         <relationship name="events" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Events" inverseName="board" inverseEntity="Events" syncable="YES"/>
@@ -18,12 +19,12 @@
         <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="creation_date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="icon" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="name" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="boards" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Board" inverseName="league" inverseEntity="Board" syncable="YES"/>
         <relationship name="players" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Player" inverseName="league" inverseEntity="Player" syncable="YES"/>
     </entity>
     <entity name="Player" representedClassName=".Player" syncable="YES">
-        <attribute name="name" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nick" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="number" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="photo" optional="YES" attributeType="Binary" syncable="YES"/>
@@ -40,7 +41,7 @@
     </entity>
     <entity name="PlayerType" representedClassName=".PlayerType" syncable="YES">
         <attribute name="icon" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="name" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="players" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Player" inverseName="player_type" inverseEntity="Player" syncable="YES"/>
     </entity>
     <entity name="Team" representedClassName=".Team" syncable="YES">
@@ -50,7 +51,7 @@
         <relationship name="events" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Events" inverseName="team" inverseEntity="Events" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Board" positionX="-29" positionY="-0" width="128" height="105"/>
+        <element name="Board" positionX="-29" positionY="-0" width="128" height="120"/>
         <element name="Events" positionX="169" positionY="189" width="128" height="120"/>
         <element name="League" positionX="-290" positionY="-139" width="128" height="150"/>
         <element name="Player" positionX="-443" positionY="204" width="128" height="180"/>

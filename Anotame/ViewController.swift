@@ -10,9 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    private let coreDataHelper = CoreDataHelper.staticInstance
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        coreDataHelper.initEssentialData()
     }
 
     override func didReceiveMemoryWarning() {
