@@ -11,7 +11,8 @@ import Foundation
 enum AnotameError : Error{
     
     case CoreDataError(message : String)
-    case LeagueAlreadyExist(message:String)
-    case ActiveBoardFound(message:String)
+    case LeagueAlreadyExist
+    case ActiveBoardFound
+    case ErrorCreatingDefaultBoard
     
 }

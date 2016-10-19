@@ -20,4 +20,13 @@ public class PlayerType: NSManagedObject {
 enum PlayerTypeEnum: String{
     case Guest = "Guest"
     case Member = "Member"
+    
+    func getSpanishValue() -> String{
+        switch  self {
+        case .Guest:
+            return "Invitado"
+        default:
+            return "Miembro"
+        }
+    }
 }

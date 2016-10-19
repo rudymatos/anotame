@@ -17,6 +17,7 @@ extension Board {
 
     @NSManaged public var creation_date: NSDate?
     @NSManaged public var active: Bool
+    @NSManaged public var mode : String
     @NSManaged public var arriving_order_list: NSSet?
     @NSManaged public var events: NSSet?
     @NSManaged public var league: League?
